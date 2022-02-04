@@ -2,14 +2,14 @@ import { getFavs } from "./favFunction.js";
 
 const favourites = getFavs();
 
-const articleContainer = document.querySelector(".articles-container");
+const productContainer = document.querySelector(".product");
 
 if(favourites.length === 0) {
-    articleContainer.innerHTML = "Ops, theres no articles here"
+   productContainer.innerHTML = "Ops, theres no products here"
 }
 
 favourites.forEach((favourite) => {
-    articleContainer.innerHTML += `<div class= "article">
+    productContainer.innerHTML += `<div class= "product">
                                      <h4> Title: ${favourite.name}</h4>
                                      <i class="fa fa-heart"></i>
                                      </div>`

@@ -12,7 +12,7 @@ export function renderProducts(productsRender){
 
                                         
             
-                                            <img> ${product.image} </img>
+                                         
 
                                             <span> Description: ${product.description} </span>
 

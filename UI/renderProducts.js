@@ -1,13 +1,15 @@
 
-export function renderProducts(ProductsRender){
+export function renderProducts(productsRender){
     const productContainer = document.querySelector(".product");
     productContainer.innerHTML ="";
     
     productsRender.forEach(function (product) {
         productContainer.innerHTML += `<div class="product">
                                             <h4>Title: ${product.title}</h4>
+
+                                            <img> src${product.image}</img>
             
-                                            <p>Sumary: ${product.summary} </p>
+                                            <p>Sumary: ${product.price} </p>
 
                                            
 
@@ -40,16 +42,16 @@ function handleClick(){
 
     const currentFavs = getFavs();
 
-    const articleExist = currentFavs.find(function(fav){
+    const productExist = currentFavs.find(function(fav){
         return fav.id === id;
     });
 
-    if (articleExist === undefined) {
+    if (productExist === undefined) {
 
 
-    const article = { id: id, name: name};
+    const product = { id: id, name: name};
 
-    currentFavs.push(article);
+    currentFavs.push(product);
 
 
     saveFavs(currentFavs);
