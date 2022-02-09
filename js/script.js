@@ -1,25 +1,44 @@
-import { renderProducts } from "./products.js";
-import { searchProduts } from "../UI/searchPrducts.js";
+import { renderProducts } from "../UI/renderProducts.js";
+import { searchProducts } from "../UI/searchPrducts.js";
 import { url } from "./api.js";
+import {url_banner} from "./api.js";
+import {displayBanner} from "./banner.js";
 
 async function getProducts() {
-    try {
+    try{
         const response = await fetch(url);
-        const allProducts= await response.json();
+        const products = await response.json();
 
-        console.log(allProducts);
+        console.log(products);
 
-        renderProducts(allProducts);
-        searchProduts(allProducts);
+        renderProducts(products);
+        searchProducts(products);
     } catch (error) {
         console.log(error);
-        displayMessage("error", error, ".product");
     }
 }
 
 getProducts();
 
 
+async function getBanner () {
+    try {
+        
+        const response_banner = await fetch(url_banner);
+        const banner = await response_banner.json();
+        console.log(banner);
+
+        displayBanner(banner);
+
+        
+    }
+
+    catch(error){
+        console.log(error);
+    }
+};
+
+getBanner();
 
 
 
