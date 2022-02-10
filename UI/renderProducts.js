@@ -1,13 +1,14 @@
 export function renderProducts(productsRender){
     const productsContainer = document.querySelector(".products-center");
     productsContainer.innerHTML ="";
+
     
     productsRender.forEach(function (product) {
         productsContainer.innerHTML += `<div article class="product">
                                             <div class= "img-container">
                                             <img src="${product.image_url}"></img>
-                                            <button class="cart-btn" data-id="1">
-                       <i class="fas fa-shopping-cart"></i>
+                                            <button class="cart-btn">
+                       <i class="fas fa-shopping-cart" data-id="${product.id}" data-name="${product.title}"></i>
                        Add to Cart
                    </button>
                                            
@@ -25,9 +26,137 @@ export function renderProducts(productsRender){
                                             <br>
                                             <br>
                                             </div>
-                                        </div>`
+          
+                                            </div>`
+
+    
+
         
     });
-};
+    const addToCart = document.querySelectorAll(".cart-btn");
 
+    addToCart.forEach((button) => {
+        button.addEventListener("click", handleClick);
+    });
+
+    function handleClick() {
+        console.log(event);
+        this.classList.toggle("fa");
+
+
+        const id = this.dataset.id;
+        const name = this.dataset.name;
+
+        console.log("name", name);
+       
+       
+
+    }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+  
+    
+      
+    
+       
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+    
+  
+    
+        
+       
+    
+        
+    
+
+        
+    
+    
+     
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+    
+    
+   
+   
+
+    
 

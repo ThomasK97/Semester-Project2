@@ -4,6 +4,8 @@ import { url } from "./api.js";
 import {url_banner} from "./api.js";
 import {displayBanner} from "./banner.js";
 
+
+
 async function getProducts() {
     try{
         const response = await fetch(url);
@@ -21,7 +23,9 @@ async function getProducts() {
 getProducts();
 
 
-async function getBanner () {
+
+
+/*async function getBanner () {
     try {
         
         const response_banner = await fetch(url_banner);
@@ -38,11 +42,7 @@ async function getBanner () {
     }
 };
 
-getBanner();
-
-
-
-
+getBanner();*/
 
 
 
