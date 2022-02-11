@@ -3,6 +3,8 @@ export function renderProducts(productsRender){
     productsContainer.innerHTML ="";
 
     
+
+    
     productsRender.forEach(function (product) {
         productsContainer.innerHTML += `<div article class="product">
                                             <div class= "img-container">
@@ -33,25 +35,15 @@ export function renderProducts(productsRender){
 
         
     });
-    const addToCart = document.querySelectorAll(".cart-btn");
+    
 
-    addToCart.forEach((button) => {
-        button.addEventListener("click", handleClick);
-    });
-
-    function handleClick() {
-        console.log(event);
-        this.classList.toggle("fa");
-
-
-        const id = this.dataset.id;
-        const name = this.dataset.name;
-
-        console.log("name", name);
+    
        
        
 
     }
+
+    
      
 
 
@@ -69,7 +61,7 @@ export function renderProducts(productsRender){
 
 
 
-}
+
 
   
     

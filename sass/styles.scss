@@ -28,6 +28,11 @@ body{
 
 
 
+li span{
+  color: aqua;
+}
+
+
 
 ul{
     list-style: none;
@@ -36,6 +41,7 @@ ul{
 a{
     text-decoration: none;
 }
+
 
 
 
@@ -309,7 +315,79 @@ p{
    color:#6B4F4F;
  }
 
+ .cart span{
+  color: #000000;
+}
+
+
+ //login
+h1{
+  color: #6B4F4F;
+}
+ .menu-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+form {
+  padding: 2em;
+  background:#6B4F4F;
+  border-radius: 1rem;
+}
+
+.usernameInput {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.passwordInput {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.submitt-btn {
+  background:#EED6C4;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color:#6B4F4F;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
  
+.message {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 252, 64);
+  border: none;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
+}
+
  
 
  /*mediaqueryes*/

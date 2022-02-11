@@ -3,7 +3,11 @@ import { searchProducts } from "../UI/searchPrducts.js";
 import { url } from "./api.js";
 import {url_banner} from "./api.js";
 import {displayBanner} from "./banner.js";
+import menu  from"./menu.js";
 
+
+
+menu();
 
 
 async function getProducts() {
@@ -43,6 +47,8 @@ getProducts();
 };
 
 getBanner();*/
+
+
 
 
 
