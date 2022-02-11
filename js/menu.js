@@ -27,7 +27,7 @@ export default function menu() {
     <div class="container">
     <div class="row align-items-center justify-content-between">
         <div class="logo">
-           <a href="index.html">Home ︱ Decor</a>
+           <a href="/">Home ︱ Decor</a>
         </div>
         <button type="button" class="nav-toggler">
                    <span></span>
