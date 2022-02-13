@@ -3,8 +3,6 @@ import { getUsername } from "../utils/storage.js";
 
 
 
-
-
 export default function menu() {
     const { pathname } = document.location;
 
