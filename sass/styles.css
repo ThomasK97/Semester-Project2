@@ -68,6 +68,10 @@ a {
   line-height: 1.5;
 }
 
+.main-title, span {
+  color: white;
+}
+
 .header .logo,
 .header .nav {
   padding: 0 15px;
@@ -333,7 +337,7 @@ p {
   color: #000000;
 }
 
-h1 {
+.menu-container, h1 {
   color: #6B4F4F;
 }
 

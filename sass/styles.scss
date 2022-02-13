@@ -68,7 +68,9 @@ a{
     padding: 12px 0;
     line-height: 1.5;
 }
-
+.main-title, span{
+  color: white;
+}
 
 
 .header .logo,
@@ -321,7 +323,7 @@ p{
 
 
  //login
-h1{
+.menu-container, h1{
   color: #6B4F4F;
 }
  .menu-container {
