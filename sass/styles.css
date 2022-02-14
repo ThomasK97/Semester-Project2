@@ -24,10 +24,6 @@ body {
   background-color: #EED6C4;
 }
 
-li span {
-  color: aqua;
-}
-
 ul {
   list-style: none;
 }
@@ -405,6 +401,10 @@ label {
   border-color: green;
   color: white;
   background: green;
+}
+
+li span {
+  color: #aab9fc;
 }
 
 /*mediaqueryes*/
