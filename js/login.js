@@ -3,6 +3,8 @@ import { login_url } from "./../js/api.js";
 import { saveToken , saveUser} from "../utils/storage.js";
 import menu from "./menu.js";
 
+menu();
+
 const form = document.querySelector("form");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");

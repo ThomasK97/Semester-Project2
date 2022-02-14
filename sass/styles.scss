@@ -43,7 +43,7 @@ a{
 
 .container{
     max-width: 1170px;
-    margin: auto;
+    margin:  auto;
 }
 
 .row{
@@ -389,6 +389,82 @@ label {
 li span{
   color: rgb(170, 185, 252);
 }
+
+//logout
+
+#logout{
+  width: auto;
+  border: none;
+  background:none;
+  color: aquamarine;
+  cursor: pointer;
+}
+
+//adding products
+
+.titleInput{
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.priceInput{
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.descriptionInput{
+  width: 100%;
+  margin-top: 2px;
+  padding: 30px;
+  font-size: 16px;
+
+}
+
+//editpage
+
+textarea{
+  width: 100%;
+  margin-top: 2px;
+  padding: 30px;
+  font-size: 16px;
+ 
+
+}
+
+
+.edit-form {
+  display: none;
+}
+
+.loading{
+  color: rgb(0, 0, 0);
+}
+
+//details
+
+.detail-container{
+
+  width: 90vw;
+  margin: auto;
+  max-width: 1170px;
+  text-align: center;
+
+
+}
+
+button.delete{
+  background:#f37777;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color:#ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
  
 
  /*mediaqueryes*/
@@ -400,7 +476,9 @@ li span{
   }
 
   
-  
+  .header .nav ul li a{
+    display: block;
+  }
   
   .cart h2 {
     text-transform: capitalize;
@@ -476,6 +554,7 @@ footer{
     color: #EED6C4;
     text-align: center;
     padding: 2rem 0;
+ 
 }
 .social-links{
     display: flex;
@@ -527,10 +606,7 @@ footer{
    	margin-top: 12px;
    	border-top:1px solid rgba(255,255,255,0.2);
    }
-   .header .nav ul li{
-   	display: block;
-   	margin:0;
-   }
+   
    
    
   

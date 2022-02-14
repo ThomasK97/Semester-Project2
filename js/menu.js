@@ -1,4 +1,5 @@
 import { getUsername } from "../utils/storage.js";
+import logOut from "../UI/logOut.js";
 
 
 
@@ -15,7 +16,8 @@ export default function menu() {
    
 
     if (username) {
-        authLink = `<span>Hi ${username}</span>`;
+        authLink = `<a href="addProducts.html" class="${pathname === "/addProducts.html" ? "active" : ""}">Add</a>
+        <li><button id="logout">Logout ${username}</li>`;
     }
 
     console.log(username);
@@ -49,6 +51,8 @@ export default function menu() {
     </div>
 </div>
 </div>`;
+
+logOut();
 
 
 

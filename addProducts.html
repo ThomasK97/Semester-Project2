@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
-    <title>Cart</title>
+    <title>Adding Proudcts</title>
 </head>
 <body>
     <!------header------>
@@ -27,8 +27,7 @@
                 </nav>
             </div>
         </div>
-        
-
+     
      </header>
 
 
@@ -40,32 +39,31 @@
 
 <div class="banner">
     <div class="container">
-        <div class="cart">
-           
-            <h2>Your Shoping Cart</h2>
-            <div class="cart-content"></div>
-     
-            <div class="cart-item">
-                <img src="./media/r-architecture-TRCJ-87Yoh0-unsplash.jpg" alt="">
-                <div>
-                    <h4>King Bed</h4>
-                    <h5>30.000kr</h5>
-                    <span class="remove-item">Remove</span>
-                </div>
-                <div>
-                    <i class="fas fa-chevron-up"></i>
-                    <p class="item-amount">1</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
+        <div class="menu-container"></div>
+
+        <h1>Add Products</h1>
+
+        <br>
+
+        <form>
+            <div class="message-container"></div>
+
+            <div>
+                <label for="title"> Title</label>
+                <input class="titleInput" id="title" />
+            </div>
+            <div>
+                <label for="price"> Price</label>
+                <input class="priceInput" id="price" />
             </div>
             
-     
-            <div class="cart-footer">
-             <h3>Total: Kr <span class="cart-total">0</span></h3>
-             <button class="clear-cart">Clear Cart</button>
-         </div>
-     
-        </div>
+            <div>
+                <label for="description"> Description</label>
+                <input class="descriptionInput" id="description" />
+            </div>
+            <br>
+            <button class="submitt-btn">Add</button>
+        </form>
         
     </div>
 </div>
@@ -102,11 +100,16 @@
 
 
     
-<script type="module" src="/js/menu.js"></script>
-<script type="module" src="/js/script.js"></script>
-<script type="module" src="/js/nav.js"></script>
+   <script type="module" src="/js/login.js"></script>
+   <script type="module" src="/js/nav.js"></script>
+   <script type="module" src="/js/script.js"></script>
+   <script type="module" src="/js/menu.js"></script>
+   <script type="module" src="/js/addProducts.js"></script>
+   
    
 
+   
+   
   
 </body>
 </html>

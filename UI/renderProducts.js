@@ -6,7 +6,8 @@ export function renderProducts(productsRender){
 
     
     productsRender.forEach(function (product) {
-        productsContainer.innerHTML += `<div article class="product">
+        productsContainer.innerHTML += `<a class="product" href="edit.html?id=${product.id}">
+        <div article class="product">
                                             <div class= "img-container">
                                             <img src="${product.image_url}"></img>
                                             <button class="cart-btn">

@@ -407,12 +407,78 @@ li span {
   color: #aab9fc;
 }
 
+#logout {
+  width: auto;
+  border: none;
+  background: none;
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.titleInput {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.priceInput {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.descriptionInput {
+  width: 100%;
+  margin-top: 2px;
+  padding: 30px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 2px;
+  padding: 30px;
+  font-size: 16px;
+}
+
+.edit-form {
+  display: none;
+}
+
+.loading {
+  color: black;
+}
+
+.detail-container {
+  width: 90vw;
+  margin: auto;
+  max-width: 1170px;
+  text-align: center;
+}
+
+button.delete {
+  background: #f37777;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
 /*mediaqueryes*/
 @media screen and (min-width: 768px) {
   .cart {
     width: 30vw;
     min-width: 450px;
   }
+}
+
+.header .nav ul li a {
+  display: block;
 }
 
 .cart h2 {
@@ -554,10 +620,6 @@ footer {
     padding: 12px 15px 0;
     margin-top: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .header .nav ul li {
-    display: block;
-    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
