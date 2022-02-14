@@ -3,6 +3,13 @@ import displayMessage from "../loginMessage/displayMessage.js";
 import { getToken } from "../utils/storage.js";
 import deleteBtn from "../UI/deleteProduct.js";
 
+const token = getToken(); 
+
+if(!token) {
+    location.href ="/";
+}
+
+
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
@@ -78,7 +85,7 @@ async function updateProduct(title, price, description, id) {
     const url = login_url + "products/" + id;
     const data = JSON.stringify({ title: title, price: price, description: description });
 
-    const token = getToken();
+    
 
     const options = {
         method: "PUT",
@@ -92,6 +99,14 @@ async function updateProduct(title, price, description, id) {
     try {
         const response = await fetch(url, options);
         const json = await response.json();
+        console.log(json);
+
+        if(json.updated_at) {
+            displayMessage("success", "Product updated", ".message-container");
+        }
+        if(json.error) {
+            displayMessage("error", json.message, ".message-container");
+        }
     }
     catch(error){
         console.error(error);

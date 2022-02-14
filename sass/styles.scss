@@ -94,6 +94,7 @@ a{
     transition: all 0.5s ease;
 }
 
+
 .header .nav ul li a.active,
 .header .nav ul li a:hover{
     color: #EED6C4;
@@ -476,9 +477,7 @@ button.delete{
   }
 
   
-  .header .nav ul li a{
-    display: block;
-  }
+  
   
   .cart h2 {
     text-transform: capitalize;

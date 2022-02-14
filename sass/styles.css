@@ -477,10 +477,6 @@ button.delete {
   }
 }
 
-.header .nav ul li a {
-  display: block;
-}
-
 .cart h2 {
   text-transform: capitalize;
   text-align: center;

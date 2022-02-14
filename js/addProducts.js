@@ -3,8 +3,11 @@ import menu from "./menu.js";
 import { getToken } from "../utils/storage.js";
 import { login_url } from "./api.js";
 
+const token = getToken(); 
 
-
+if(!token) {
+    location.href ="/";
+}
 
 const form = document.querySelector("form");
 const title = document.querySelector("#title");
@@ -41,7 +44,7 @@ async function addProduct(title, price, description){
 
     const data = JSON.stringify({ title: title, price: price, description: description })
 
-    const token = getToken();
+   
 
     const options = {
         method: "POST",

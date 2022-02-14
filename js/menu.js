@@ -20,7 +20,7 @@ export default function menu() {
         <li><button id="logout">Logout ${username}</li>`;
     }
 
-    console.log(username);
+  
     
     container.innerHTML = `<div class="header">
    
@@ -29,13 +29,15 @@ export default function menu() {
         <div class="logo">
            <a href="/">Home ︱ Decor</a>
         </div>
+        
         <button type="button" class="nav-toggler">
                    <span></span>
                 </button>
-       
-        
+                
+            
         <nav class="nav">
            <ul>
+             
            
               <li><a href="/" class="${pathname === "/" ? "active" : ""}">Home</a></li>
               <li>${productsLink}</li>
