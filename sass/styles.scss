@@ -342,6 +342,9 @@ p{
   color: #000000;
 }
 
+.cart-content{
+  color: #000000;
+}
 
  //login
 .menu-container, h1{
@@ -394,21 +397,21 @@ label {
 }
 
 .message.error {
-  border-color: red;
+  border-color: rgb(241, 115, 115);
   color: white;
-  background: red;
+  background: rgb(241, 115, 115);
 }
 
 .message.warning {
   color: rgb(0, 0, 0);
-  background: rgb(255, 252, 64);
+  background: rgb(224, 223, 122);
   border: none;
 }
 
 .message.success {
-  border-color: green;
+  border-color: rgb(131, 204, 131);
   color: white;
-  background: green;
+  background: rgb(131, 204, 131);
 }
 
 li span{
@@ -492,6 +495,7 @@ button.delete{
 }
  
 
+
  /*mediaqueryes*/
 
  @media screen and (min-width: 375px) {
@@ -504,7 +508,7 @@ button.delete{
   
   
   .cart {
-      width: 30vw;
+      width: 20vw;
       min-width: 450px;
     }
   }
@@ -530,7 +534,7 @@ button.delete{
     margin: 1.5rem 0;
   }
   .cart-item img {
-    width: 75px;
+    width: 100px;
     height: 75px;
   }
   .cart-item h4 {
@@ -551,11 +555,7 @@ button.delete{
     color:#6B4F4F;
     cursor: pointer;
   }
-  .fa-chevron-up,
-  .fa-chevron-down {
-    color: #6B4F4F;
-    cursor: pointer;
-  }
+  
 
   .cart-footer {
     margin-top: 2rem;

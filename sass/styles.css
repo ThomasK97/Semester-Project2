@@ -360,6 +360,10 @@ p {
   color: #000000;
 }
 
+.cart-content {
+  color: #000000;
+}
+
 .menu-container, h1 {
   color: #6B4F4F;
 }
@@ -413,21 +417,21 @@ label {
 }
 
 .message.error {
-  border-color: red;
+  border-color: #f17373;
   color: white;
-  background: red;
+  background: #f17373;
 }
 
 .message.warning {
   color: black;
-  background: #fffc40;
+  background: #e0df7a;
   border: none;
 }
 
 .message.success {
-  border-color: green;
+  border-color: #83cc83;
   color: white;
-  background: green;
+  background: #83cc83;
 }
 
 li span {
@@ -499,7 +503,7 @@ button.delete {
 /*mediaqueryes*/
 @media screen and (min-width: 768px) {
   .cart {
-    width: 30vw;
+    width: 20vw;
     min-width: 450px;
   }
 }
@@ -525,7 +529,7 @@ button.delete {
 }
 
 .cart-item img {
-  width: 75px;
+  width: 100px;
   height: 75px;
 }
 
@@ -547,12 +551,6 @@ button.delete {
 }
 
 .remove-item {
-  color: #6B4F4F;
-  cursor: pointer;
-}
-
-.fa-chevron-up,
-.fa-chevron-down {
   color: #6B4F4F;
   cursor: pointer;
 }

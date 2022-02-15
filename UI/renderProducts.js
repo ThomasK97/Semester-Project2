@@ -1,4 +1,5 @@
 import { url } from "../js/api.js";
+import { getExistingItems } from "../utils/getExistingItems.js";
 
 export function renderProducts(productsRender){
     const productsContainer = document.querySelector(".products-center");
@@ -21,9 +22,12 @@ export function renderProducts(productsRender){
                        View More
                    </button>
                    <a class="product" href="edit.html?id=${product.id}">
-                                            <h3>Title: ${product.title}</h3>
+                                            <h3>${product.title}</h3>
 
-                                            <h4> Price: ${product.price} kr</h4>
+                                            <h4>${product.price} kr</h4>
+
+                                            <br>
+                                            <br>
 
                                         
             
@@ -42,16 +46,30 @@ export function renderProducts(productsRender){
 
         
     });
-    
+
+    const addToCartButton = document.querySelector(".product i");
+
+
+    addToCartButton.forEach((button) => {
+        button.addEventListener("click", handleClick);
+        
+    });
 
     
-       
-       
-
     }
 
+
     
-     
+       
+       
+
+    
+
+   
+
+    
+    
+    
 
 
 
