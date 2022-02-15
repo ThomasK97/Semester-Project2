@@ -216,7 +216,7 @@ p {
 }
 
 .search {
-  margin-left: 19.5rem;
+  margin: auto;
   padding: 0.5rem;
   border-radius: 1rem;
   border: none;
@@ -597,6 +597,21 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .product-img {
+    display: block;
+    width: 50%;
+    min-height: 1rem;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .img-container:hover .product-img {
+    opacity: 0.2;
+  }
+  .products-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 570px;
+  }
   .nav-toggler {
     display: block;
   }

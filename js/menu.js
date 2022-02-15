@@ -17,7 +17,8 @@ export default function menu() {
 
     if (username) {
         authLink = `<a href="addProducts.html" class="${pathname === "/addProducts.html" ? "active" : ""}">Add</a>
-        <li><button id="logout">Logout ${username}</li>`;
+        <li><button id="logout">Logout ${username}</li>
+        `;
     }
 
   

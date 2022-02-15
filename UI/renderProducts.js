@@ -1,3 +1,5 @@
+import { url } from "../js/api.js";
+
 export function renderProducts(productsRender){
     const productsContainer = document.querySelector(".products-center");
     productsContainer.innerHTML ="";
@@ -6,7 +8,7 @@ export function renderProducts(productsRender){
 
     
     productsRender.forEach(function (product) {
-        productsContainer.innerHTML += `<a class="product" href="edit.html?id=${product.id}">
+        productsContainer.innerHTML += `
         <div article class="product">
                                             <div class= "img-container">
                                             <img src="${product.image_url}"></img>
@@ -14,7 +16,7 @@ export function renderProducts(productsRender){
                        <i class="fas fa-shopping-cart" data-id="${product.id}" data-name="${product.title}"></i>
                        Add to Cart
                    </button>
-                                           
+                   <a class="product" href="edit.html?id=${product.id}">
                                             <h3>Title: ${product.title}</h3>
 
                                             <h4> Price: ${product.price} kr</h4>

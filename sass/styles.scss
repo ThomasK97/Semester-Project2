@@ -200,7 +200,7 @@ p{
 }
 
 .search {
-  margin-left: 19.5rem;
+  margin: auto;
   padding: 0.5rem;
   border-radius: 1rem;
   border: none;
@@ -469,8 +469,17 @@ button.delete{
  
 
  /*mediaqueryes*/
+
+ @media screen and (min-width: 375px) {
+   
+ }
+  
  @media screen and (min-width: 768px) {
-    .cart {
+    
+  
+  
+  
+  .cart {
       width: 30vw;
       min-width: 450px;
     }
@@ -544,6 +553,8 @@ button.delete{
       cursor: pointer;
 
   }
+
+
   
 
 /*footer*/
@@ -585,7 +596,31 @@ footer{
 
 
 
+
 @media(max-width:991px){
+
+  .product-img {
+    display: block;
+    width: 50%;
+    min-height: 1rem;
+    transition: all 0.3s linear;
+  }
+  .img-container:hover .product-img {
+    opacity: 0.2;
+  }
+  
+
+
+.products-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 570px;
+    
+    
+
+}
+
+
    .nav-toggler{
    	display: block;
    }

@@ -29,7 +29,7 @@ getProducts();
 
 
 
-/*async function getBanner () {
+async function getBanner () {
     try {
         
         const response_banner = await fetch(url_banner);
@@ -46,7 +46,7 @@ getProducts();
     }
 };
 
-getBanner();*/
+getBanner();
 
 
 

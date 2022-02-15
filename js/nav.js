@@ -1,4 +1,6 @@
+import menu from "./menu.js";
 
+menu();
 const navToggler = document.querySelector(".nav-toggler");
  navToggler.addEventListener("click", navToggle);
 
