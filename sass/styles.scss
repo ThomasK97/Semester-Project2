@@ -256,6 +256,30 @@ p{
 
 }
 
+.view-btn{
+  position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: #6B4F4F;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    transform: translatex(-101%);
+    cursor: pointer;
+    color: #EED6C4;
+}
+
+.img-container:hover .view-btn {
+  transform: translateX(0);
+}
+
+.view-btn a{
+  color: #EED6C4;
+}
+
   .fa-shopping-cart {
     margin-right: 0.5rem;
   }

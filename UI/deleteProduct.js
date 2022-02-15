@@ -12,7 +12,11 @@ export default function deleteBtn(id) {
     button.onclick = async function(){
         console.log(id);
 
-        const url = login_url + "products/" + id;
+        const deletePrompt = confirm("Do you want to delete product?");
+        console.log(deletePrompt);
+
+        if(deletePrompt) {
+            const url = login_url + "products/" + id;
 
         const token = getToken(); 
 
@@ -38,6 +42,10 @@ export default function deleteBtn(id) {
             console.log(error);
 
         }
+
+        }
+
+        
 
 
 

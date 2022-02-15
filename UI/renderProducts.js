@@ -16,6 +16,10 @@ export function renderProducts(productsRender){
                        <i class="fas fa-shopping-cart" data-id="${product.id}" data-name="${product.title}"></i>
                        Add to Cart
                    </button>
+                   <button class="view-btn">
+                        <a class="product" href="productDetail.html?id=${product.id}"</a>
+                       View More
+                   </button>
                    <a class="product" href="edit.html?id=${product.id}">
                                             <h3>Title: ${product.title}</h3>
 
