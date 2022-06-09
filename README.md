@@ -4,15 +4,11 @@
 
 This is my Semester-Project2 submission  a homedecor website. This features a products page, details page and the contact page.
 
-You can add some bullet points if you'd like to:
-
 - Semester Project
 - Home decor
 
 
 ## Built With
-
-You can list a the tech stack that you've used over here
 
 - html
 - js
@@ -23,13 +19,9 @@ You can list a the tech stack that you've used over here
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
 
 start up the project
 
