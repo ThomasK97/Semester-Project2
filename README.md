@@ -44,6 +44,8 @@ The things that needs to improve is adding a add to cart function.
 
 ## Contact
 
-[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/thomas-kildahl-51ab08213/))
+[My LinkedIn page]
+www.linkedin.com](https://www.linkedin.com/in/thomas-kildahl-51ab08213
+
 
 
